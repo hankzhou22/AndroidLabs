@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false">
+
+
+    <View
+        android:id="@+id/receiverAvatar"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerInside"
+        android:background="@drawable/row_receive"
+        android:layout_width="34sp"
+        android:layout_height="34sp" />
+
+    <TextView
+        android:id="@+id/receiverName"
+        android:layout_marginStart="15sp"
+        android:layout_toStartOf="@+id/receiverAvatar"
+        android:layout_alignTop="@+id/receiverAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4sp"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewMessage"
+        android:layout_below="@+id/receiverName"
+        android:layout_alignEnd="@+id/receiverName"
+        android:background="@drawable/receive_message"
+        android:elevation="2sp"
+        android:textSize="18sp"
+        android:text="@string/sentence"
+        />
+</RelativeLayout>
